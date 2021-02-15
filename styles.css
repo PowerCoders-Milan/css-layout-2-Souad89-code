@@ -1,17 +1,46 @@
 /* USE CSS LAYOUTS HERE */
 
 .header {
-
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   font-weight: 500;
+   font-style: italic;
+   text-align-last: center;
+   color: rgb(94, 36, 50);
 }
 
 .main {
-
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   font-weight: 300;
+   text-align-last: center;
+   color: rgb(167, 98, 115);
 }
 
 .footer-grid {
-
+    display: grid;
+    grid: template rows 5px;
+    grid: template columns 5px;
+    grid: gap 5px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(189, 124, 144);
+    color: white;
+    text-align: left;
 }
 
 .footer-flex {
-
+    display: flex;
+    justify-content:center;
+    align-items:left;
+    flex-direction:column-reverse;
+    order:inherit;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(189, 124, 144);
+    color: white;
+    text-align: left;
 }
+
