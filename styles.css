@@ -1,46 +1,23 @@
 /* USE CSS LAYOUTS HERE */
-
-.header {
-   font-family: Georgia, 'Times New Roman', Times, serif;
-   font-weight: 500;
-   font-style: italic;
-   text-align-last: center;
-   color: rgb(94, 36, 50);
-}
-
+.flex {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+} 
+.grid {
+  display: grid;
+  min-height: 100vh;
+  grid-template-rows: 1fr 8fr 1fr;
+} 
 .main {
-   font-family: Georgia, 'Times New Roman', Times, serif;
-   font-weight: 300;
-   text-align-last: center;
-   color: rgb(167, 98, 115);
+  background-color: rgb(126, 86, 119);
+  flex: 1;
 }
-
-.footer-grid {
-    display: grid;
-    grid: template rows 5px;
-    grid: template columns 5px;
-    grid: gap 5px;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: rgb(189, 124, 144);
-    color: white;
-    text-align: left;
+.header {
+  background-color: rgb(190, 83, 119);
+  height: 10vh;
 }
-
-.footer-flex {
-    display: flex;
-    justify-content:center;
-    align-items:left;
-    flex-direction:column-reverse;
-    order:inherit;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: rgb(189, 124, 144);
-    color: white;
-    text-align: left;
+.footer {
+  background-color: rgb(71, 50, 110);
+  height: 10vh;
 }
-
